@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="0dp"
+    tools:context=".SymptomChecker">
+    <LinearLayout
+        android:id="@+id/mainpatch_back_lp_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/mainpatch_lp_sc"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Do you realise any irregularities/heavy periods in your menstrual cycle?"
+                    android:layout_marginTop="20dp"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/G1">
+                        <RadioButton
+                            android:id="@+id/R1G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:onClick="rg1_click"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/R2G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:onClick="rg1_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/R3G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can't Say"
+                            android:onClick="rg1_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="2. Do you realise any excessive growth of hair on your face?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/G2">
+                        <RadioButton
+                            android:id="@+id/R1G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:onClick="rg2_click"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/R2G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:onClick="rg2_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/R3G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can't Say"
+                            android:onClick="rg2_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="3. Do you notice weight gain?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/G3">
+                        <RadioButton
+                            android:id="@+id/R1G3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:onClick="rg3_click"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/R2G3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:onClick="rg3_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/R3G3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can't Say"
+                            android:onClick="rg3_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="4. Do you notice hairfall?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/G4">
+                        <RadioButton
+                            android:id="@+id/R1G4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:onClick="rg4_click"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/R2G4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:onClick="rg4_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/R3G4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can't Say"
+                            android:onClick="rg4_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="5. Did you found acne in your body parts?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:id="@+id/ll5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/G5">
+                        <RadioButton
+                            android:id="@+id/R1G5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:onClick="rg5_click"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/R2G5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:onClick="rg5_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/R3G5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can't Say"
+                            android:onClick="rg5_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="6. Do you feel depressed for a period of time?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:id="@+id/ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/G6">
+                        <RadioButton
+                            android:id="@+id/R1G6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:onClick="rg6_click"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/R2G6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:onClick="rg6_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/R3G6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can't Say"
+                            android:onClick="rg6_click"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:visibility="invisible"
+                    android:background="@color/colorAccent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Check for PCOS"
+                    android:onClick="check_click"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

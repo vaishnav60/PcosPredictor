@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="0dp"
+    tools:context=".TrackCycle">
+    <LinearLayout
+        android:id="@+id/mainpatch_back_lp_tc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/mainpatch_lp_tc"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="16dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Period Start Date"
+                        android:textSize="14dp"
+                        android:layout_marginTop="16dp"></TextView>
+                    <TextView
+                        android:id="@+id/lblPreviousStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Next Period Start Date"
+                    android:textSize="14dp"
+                    android:layout_marginTop="16dp"></TextView>
+                <TextView
+                    android:id="@+id/lblNextStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Next Period End Date"
+                    android:textSize="14dp"
+                    android:layout_marginTop="16dp"></TextView>
+                <TextView
+                    android:id="@+id/lblNextEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No of days left for Next Period"
+                    android:textSize="14dp"
+                    android:layout_marginTop="16dp"></TextView>
+                <TextView
+                    android:id="@+id/lblNoOfDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <Button
+                    android:id="@+id/btnSaveToCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorAccent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Save to Calendar"
+                    android:onClick="savetocalendar_click"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

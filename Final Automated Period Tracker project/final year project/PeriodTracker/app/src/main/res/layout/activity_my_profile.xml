@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="0dp"
+    tools:context=".MyProfile">
+    <LinearLayout
+        android:id="@+id/mainpatch_back_lp_mp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/mainpatch_lp_mp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginTop="20dp"></TextView>
+                <EditText
+                    android:id="@+id/txtName_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtMobile_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age (In years)"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtAge_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weight (In kg)"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtWeight_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="Weight"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height (In cms)"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtHeight_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="Height"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BMI"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtBMI_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="BMI"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marriage Status (In years)"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtMarriageStatus_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="Marriage Status"
+                    android:inputType="number"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No of Children"
+                    android:layout_marginTop="16dp"></TextView>
+                <EditText
+                    android:id="@+id/txtNoOfChildren_MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_single"
+                    android:hint="BMI"
+                    android:inputType="number"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/btnUpdateUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorAccent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Save"
+                    android:onClick="save_click"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="0dp"
+    tools:context=".Login">
+    <LinearLayout
+        android:id="@+id/mainpatch_back_lp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/mainpatch_lp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <ImageView
+                    android:id="@+id/colorlogo_lp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_pt" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Login"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Login into your account using your Mobile Number and Password"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11sp"/>
+                <EditText
+                    android:id="@+id/txtUsernameLP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edit_text_top"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/txtPasswordLP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_bottom"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+                <Button
+                    android:id="@+id/btnLoginLP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorAccent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Login"
+                    android:onClick="login_click"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:id="@+id/txtCreateAccount_lp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="New to Period Tracker? Create account now."
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="register_click"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

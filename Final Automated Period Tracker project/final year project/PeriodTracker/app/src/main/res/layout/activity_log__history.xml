@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="0dp"
+    tools:context=".SymptomChecker">
+    <LinearLayout
+        android:id="@+id/mainpatch_back_lp_lh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/mainpatch_lp_lh"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Period Start Date"
+                    android:layout_marginTop="20dp"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/txtStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:clickable="true"
+                        android:focusable="false" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Period End Date"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/txtEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:clickable="true"
+                        android:focusable="false" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/LHQ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Did you get this period on normal dates?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/LHG1">
+                        <RadioButton
+                            android:id="@+id/LHR1G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/LHR2G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/LHR3G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dont Remember"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/LHQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Did you observe any abnormality?"
+                    android:layout_marginTop="16dp"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/LHG2">
+                        <RadioButton
+                            android:id="@+id/LHR1G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:layout_marginTop="10dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/LHR2G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                        <RadioButton
+                            android:id="@+id/LHR3G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dont Remember"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:checked="false"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnSaveHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorAccent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Save History"
+                    android:onClick="save_click"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
